@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Wash Clean Park</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Oswald:wght@500;600;700&display=swap"
+            rel="stylesheet">
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+<nav class="navbar fixed-top navbar-expand-lg container-fluid p-2">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white">
+            <img src="images/logo1.webp" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.home" href="#home"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.about_us"
+                       href="#about"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.gallery"
+                       href="#project"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.pricing"
+                       href="#price"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.sponsors"
+                       href="#sponsors"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav social-media me-lg-3 d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link px-2" target="_blank"
+                       href="https://www.facebook.com/profile.php?id=61562512852389">
+                        <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" target="_blank"
+                       href="https://www.instagram.com/mrwashcleanpark?igsh=YTJzOXgwMzJxNHdw&utm_source=qr">
+                        <iconify-icon icon="ri:instagram-line" class="social-icon text-white"></iconify-icon>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" target="_blank"
+                       href="https://www.tiktok.com/@mrwashcleanpark?_t=ZM-8tyT7eWCPRu&_r=1">
+                        <iconify-icon icon="ri:tiktok-line" class="social-icon text-white"></iconify-icon>
+                    </a>
+                </li>
+            </ul>
+            <div class="language-switcher" role="radiogroup" aria-labelledby="language-switcher-label">
+                <p class="hidden" id="language-switcher-label">Choose a language</p>
+
+                <input class="language__control" type="radio" id="language-en" name="language-switch"
+                       data-language="english" checked>
+                <label class="language__option" for="language-en">
+                    <img src="images/english.png" alt="English flag">
+                    <span>EN</span>
+                </label>
+
+                <input class="language__control" type="radio" id="language-al" name="language-switch"
+                       data-language="albanian">
+                <label class="language__option" for="language-al">
+                    <img src="images/albanian.png" alt="Albanian flag">
+                    <span>AL</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="home">
+    <div class="container padding-large">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <!--                <p data-key="title" class="header-top text-white mb-4"></p>-->
+                <!--                <h2 data-key="description" class="display-1 text-white mb-5"></h2>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div style="overflow: hidden;">
+        <div class="container-fluid border-bottom" data-aos="zoom-out">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 padding-medium pe-5 border-end">
+                        <p class="header-top mb-3" data-key="about_us.why_choose_us"></p>
+                        <h2 class="display-4" data-key="about_us.self_washing"></h2>
+                    </div>
+                    <div class="col-md-6 padding-medium-2 ps-md-5">
+                        <p class="ms-md-5" data-key="about_us.description">
+                        </p>
+                        <a href="#price" class="btn btn-primary ms-md-5 mt-3" data-key="about_us.prices">
+                            <iconify-icon icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="process" class="my-5">
+    <div style="overflow: hidden;">
+        <div class="container" data-aos="zoom-out">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="py-3 py-md-5 px-3">
+                        <div class="info-data">
+                            <h4>
+                                <span class="heading-color">01.</span>
+                            </h4>
+                            <h4 data-key="process.step_1.heading"></h4>
+                        </div>
+                        <p data-key="process.step_1.description">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="py-3 py-md-5 px-3">
+                        <div class="info-data">
+                            <h4>
+                                <span class="heading-color">02.</span>
+                            </h4>
+                            <h4 data-key="process.step_2.heading"></h4>
+                        </div>
+                        <p data-key="process.step_2.description"></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="py-3 py-md-5 px-3">
+                        <div class="info-data">
+                            <h4>
+                                <span class="heading-color">03.</span>
+                            </h4>
+                            <h4 data-key="process.step_3.heading"></h4>
+                        </div>
+                        <p data-key="process.step_3.description"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="project" class="py-5" style="background-image:url(images/project-img.jpg);">
+    <div style="overflow: hidden;">
+        <div data-aos="zoom-out">
+            <div class="container position-relative d-sm-flex py-5 mt-5 mb-2">
+                <div>
+                    <p class="header-top mb-3" data-key="gallery.gallery_text"></p>
+                    <h2 class=" text-white display-4" data-key="gallery.latest_img"></h2>
+                </div>
+
+                <div class="swiper-arrow position-absolute end-0 mt-sm-5 ms-3">
+                    <iconify-icon icon="teenyicons:arrow-left-solid" class="icon-arrow-left me-3"></iconify-icon>
+                    <iconify-icon icon="teenyicons:arrow-right-solid" class="icon-arrow-right"></iconify-icon>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="swiper project-swiper mb-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img" src="images/main-img1.JPG"
+                                     alt="company-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img" src="images/main-img2.JPG"
+                                     alt="company-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img " src="images/main-img3.JPG" alt="company-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img" src="images/night-image-2.jpeg" alt="company-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img " src="images/night-image-4.jpeg" alt="company-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <img class="portfolio-img" src="images/night-image-5.jpeg" alt="company-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="price" class="my-5">
+    <div style="overflow: hidden;">
+        <div class="container py-5" data-aos="zoom-out">
+
+            <p class="header-top" data-key="pricing_plans.section_title.pricing_plans"></p>
+            <h2 class="display-4 mb-5" data-key="pricing_plans.section_title.wash_packages"></h2>
+
+            <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link me-4 px-4 py-1 mb-2 active" id="regular-tab" data-bs-toggle="tab"
+                            data-bs-target="#regular-tab-pane" type="button" role="tab" aria-controls="regular-tab-pane"
+                            aria-selected="true" data-key="pricing_plans.tabs.automatic_car_wash">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link me-4 px-4 py-1 mb-2" id="self-tab" data-bs-toggle="tab"
+                            data-bs-target="#self-tab-pane" type="button" role="tab" aria-controls="self-tab-pane"
+                            aria-selected="false" data-key="pricing_plans.tabs.self_car_wash">
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Automatic Car Wash Tab Content -->
+                <div class="tab-pane fade show active" id="regular-tab-pane" role="tabpanel"
+                     aria-labelledby="regular-tab" tabindex="0">
+                    <div class="row py-4">
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Basic</p>
+                                <h2 class="display-5 mb-5">5€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.shampo"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.brush"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.Drying"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Deluxe</p>
+                                <h2 class="display-5 mb-5">6€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.softener"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.high_presure"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.shampo"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.Drying"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Ultimate</p>
+                                <h2 class="display-5 mb-5">8€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.softener"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.high_presure"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.foam"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.undercarriage"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.Drying"></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Ultra ultimate</p>
+                                <h2 class="display-5 mb-5">12€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.softener"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.high_presure"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.foam"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.undercarriage"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.polish"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultra_ultimate.Drying"></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self Car Wash Tab Content -->
+                <div class="tab-pane fade" id="self-tab-pane" role="tabpanel"
+                     aria-labelledby="self-tab" tabindex="0">
+                    <div class="row py-4">
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Basic</p>
+                                <h2 class="display-5 mb-5">0.50€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text">100 Sec</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shampon</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shkuma</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Larje me presion</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Qiri</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Deluxe</p>
+                                <h2 class="display-5 mb-5">1.00€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text">200 Sec</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shampon</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shkuma</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Larje me presion</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Qiri</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Ultimate</p>
+                                <h2 class="display-5 mb-5">2.00€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text">400 Sec</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shampon</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Shkuma</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Larje me presion</span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text">Qiri</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pb-4">
+                            <div class="py-5 plan-post text-center">
+                                <p class="header-top">Inside Cleaning</p>
+                                <h2 class="display-5 mb-5">0.50€</h2>
+                                <div class="price-option">
+                                    <p><span class="price-tick">-</span><span class="price-text">300 Sec</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="video">
+    <div style="overflow: hidden;">
+        <div class="video-content position-relative open-up" data-aos="zoom-out">
+            <div class="video-wrapper position-relative">
+                <video controls id="video">
+                    <source src="images/carwash.MOV">
+                    Your browser does not support the video tag.
+                </video>
+                <iconify-icon icon="ion:play-sharp" class="video-icon"></iconify-icon>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sponsors">
+    <div style="overflow: hidden" class="sponsors">
+        <h2>Sponsors</h2>
+
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./images/logo1.webp" alt="logo"/>
+                <img src="./images/logo1.webp" alt="logo"/>
+                <img src="./images/logo1.webp" alt="logo"/>
+                <img src="./images/logo1.webp" alt="logo"/>
+                <img src="./images/logo1.webp" alt="logo"/>
+                <img src="./images/logo1.webp" alt="logo"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="#infous">
+    <div style="overflow: hidden;" class="border-top">
+        <div class="container" data-aos="zoom-out">
+            <div class="row ">
+                <div class="col-md-4 text-center padding-medium border-end">
+                    <b><p class="header-top mb-4" data-key="contact_info.number"></p>
+                    </b>
+                    <p class="mb-2">+383 48 142 111</p>
+                    <!--                    <p class="mb-2">+123 666 777 88</p>-->
+                </div>
+                <div class="col-md-4 text-center padding-medium border-end">
+                    <b><p class="header-top mb-4" data-key="contact_info.working_hours"></p>
+                    </b>
+
+                    <p class="mb-2" data-key="contact_info.availability"></p>
+                </div>
+                <div class="col-md-4 text-center padding-medium">
+                    <b><p class="header-top mb-4" data-key="contact_info.address"></p>
+                    </b>
+                    <p class="mb-2">Bibaj, Ferizaj, Kosovo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.4344230243382!2d21.20128147690214!3d42.371360671191916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547d00473a268d%3A0x7b840237842e3914!2sMr%20Wash%20Clean%20Park!5e1!3m2!1sen!2s!4v1740344420434!5m2!1sen!2s" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+<section id="footer">
+    <div class="container footer-containerG mt-5 mt-md-0 pt-3">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-0 my-md-5 my-lg-5 py-0 py-md-5 py-lg-5 ">
+
+            <div class="col-md-3 my-0 my-lg-0 my-md-0 mt-md-0 ">
+                <img src="images/logo1.webp" alt="logo" width="170px" height="130px">
+                <p class="my-4" data-key="footer.description"></p>
+            </div>
+
+            <div class="col-md-3 offset-md-1">
+                <h5 class="fs-5 mt-3 mt-md-0 mb-3" data-key="footer.links"></h5>
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item footer-list mb-3"><a href="#home" data-key="navigation.home"
+                                                             class="nav-link text-uppercase p-0 ">
+                    </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#about" data-key="navigation.about_us" class="nav-link text-uppercase p-0">
+                        </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#project" data-key="navigation.gallery" class="nav-link text-uppercase p-0 ">
+                        </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#price" data-key="navigation.pricing" class="nav-link text-uppercase p-0 ">
+                        </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#sponsors" data-key="navigation.sponsors" class="nav-link text-uppercase p-0 ">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="fs-5 mt-3 mt-md-0 mb-3" data-key="footer.our_services"></h5>
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#" data-key="process.step_1.heading" class="nav-link text-uppercase p-0 ">
+                        </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#" data-key="process.step_2.heading" class="nav-link text-uppercase p-0 ">
+                        </a>
+                    </li>
+                    <li class="nav-item footer-list mb-3">
+                        <a href="#" data-key="process.step_3.heading" class="nav-link text-uppercase p-0 "></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 contact">
+                <h5 class="fs-5 mt-3 mt-md-0 mb-3" data-key="footer.contact_us"></h5>
+                <div class="card">
+                    <div class="social-icons">
+                        <p>@Facebook</p>
+                        <a target="_blank"
+                           href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61562512852389">Follow</a>
+                        <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.197 21V12H6V9h3V6.741C9 3.664 10.882 2 13.641 2c1.352 0 2.516.1 2.859.146v3.316H14.7c-1.48 0-1.765.695-1.765 1.714V9h3.783l-.5 3h-3.283v9h-3.738z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="social-icons">
+                        <p>@Instagram</p>
+                        <a target="_blank"
+                           href="https://www.instagram.com/mrwash_cp?igsh=YTJzOXgwMzJxNHdw&utm_source=qr">Follow</a>
+                        <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.849.07 3.252.147 4.771 1.691 4.918 4.918.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.147 3.227-1.664 4.771-4.918 4.918-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-3.252-.147-4.771-1.691-4.918-4.918-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.147-3.227 1.664-4.771 4.918-4.918 1.265-.058 1.645-.07 4.849-.07M12 0C8.741 0 8.332.012 7.052.07 2.864.256.256 2.864.07 7.052.012 8.332 0 8.741 0 12s.012 3.668.07 4.948c.186 4.188 2.794 6.796 6.982 6.982C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c4.188-.186 6.796-2.794 6.982-6.982.058-1.28.07-1.688.07-4.948s-.012-3.668-.07-4.948c-.186-4.188-2.794-6.796-6.982-6.982C15.668.012 15.259 0 12 0z"></path>
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <circle cx="18.406" cy="5.594" r="1.439"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="social-icons">
+                        <p>@TikTok</p>
+                        <a target="_blank" href="https://www.tiktok.com/@mr.washcp?_t=ZM-8toGj7nZGh4&_r=1">Follow</a>
+                        <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    <footer class="mt-2 d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+            <div class="col-md-6 d-flex align-items-center">
+                <p data-key="footer.all_rights"></p>
+            </div>
+        </footer>
+    </div>
+</section>
+
+
+<!-- script ================================================== -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script type="module" src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+</body>
+
+</html>
