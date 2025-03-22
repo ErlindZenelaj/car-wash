@@ -95,7 +95,7 @@ h6,
 }
 
 #home {
-    background-image: url(images/night-image-7.jpeg);
+    background-image: url(images/night-image-7.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,6 +109,11 @@ h6,
         letter-spacing: 0.28125rem;
     }
 
+}
+
+.custom-img{
+    width: 180px;
+    object-fit: contain;
 }
 
 .display-1 {
