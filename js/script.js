@@ -239,6 +239,19 @@ import translations from './translation.js';
     }
   }());
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        // Only close if visible (mobile)
+        if (navbarCollapse.classList.contains("show")) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+  });
 
   //close canvas
   document.addEventListener("DOMContentLoaded", function () {
