@@ -44,7 +44,7 @@ const translations = {
         },
         "pricing_plans": {
             "section_title": {
-                "pricing_plans": "Pricing plans",
+                "pricing_plans": "Prices",
                 "wash_packages": "Wash packages"
             },
             "tabs": {
@@ -169,7 +169,7 @@ const translations = {
         },
         "pricing_plans": {
             "section_title": {
-                "pricing_plans": "Pricing plans",
+                "pricing_plans": "Çmimore",
                 "wash_packages": "Wash packages"
             },
             "tabs": {
