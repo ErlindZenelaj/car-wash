@@ -347,49 +347,53 @@ iconify-icon.hamburger-menu {
     margin-bottom: 100px;
     padding: 0 12px;
 
-    .tiktok-video-wrapper {
-        position: relative;
-        padding: 10px;
-    }
+   .tiktoks{
+       display: flex;
+       gap: 12px;
+       .tiktok-video-wrapper {
+           position: relative;
+           width: 100%;
+       }
+       .video-container {
+           position: relative;
+           overflow: hidden;
+           border-radius: 12px;
+           cursor: pointer;
 
-    .video-container {
-        position: relative;
-        overflow: hidden;
-        border-radius: 12px;
-        cursor: pointer;
+           .video {
+               width: 100%;
+               max-height: 650px;
+               height: 100%;
+               display: block;
+               border-radius: 12px;
+               transition: transform 0.3s ease;
+               object-fit: cover;
+           }
+           .overlay {
+               position: absolute;
+               bottom: 0;
+               width: 100%;
+               padding: 10px 12px;
+               background: rgba(0, 0, 0, 0.5);
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               color: #fff;
+               font-weight: bold;
+               font-size: 1rem;
+               opacity: 1;
+               transition: opacity 0.3s ease;
+               border-radius: 0 0 12px 12px;
+           }
 
-        .video {
-            width: 100%;
-            max-height: 650px;
-            height: 100%;
-            display: block;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-            object-fit: cover;
-        }
-    }
+           .tiktok-logo {
+               height: 30px;
+               width: auto;
+           }
 
-    .overlay {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 10px 12px;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        font-weight: bold;
-        font-size: 1rem;
-        opacity: 1;
-        transition: opacity 0.3s ease;
-        border-radius: 0 0 12px 12px;
-    }
+       }
+   }
 
-    .tiktok-logo {
-        height: 30px;
-        width: auto;
-    }
 
     .video-container:hover .video {
         transform: scale(1.05);
@@ -519,10 +523,13 @@ iconify-icon.hamburger-menu {
         }
     }
     #tiktok{
-        .video-container{
-            .video{
-                height: auto;
-                object-fit: cover;
+        .tiktoks{
+            .tiktok-video-wrapper{
+                width: 100%;
+                .video{
+                    height: auto;
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -530,15 +537,17 @@ iconify-icon.hamburger-menu {
 
 @media only screen and (max-width: 767px) {
     #tiktok{
-        .video-container{
-            .video{
-                height: auto;
-                object-fit: cover;
+        .tiktoks{
+            flex-direction: column;
+            .tiktok-video-wrapper{
+                width: 100%;
+                .video{
+                    height: auto;
+                    object-fit: cover;
+                }
             }
         }
-        .col-12{
-            padding: 8px 0;
-        }
+
     }
 
     #home {
