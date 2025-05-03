@@ -95,10 +95,25 @@ h6,
 }
 
 #home {
-    background-image: url(images/night-image-7.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .text-overlay {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
 
     .header-top {
         color: var(--accent-color);
@@ -203,11 +218,11 @@ iconify-icon.arrow-icon {
 }
 
 .navbar-toggler {
-    border: var(--bs-border-width) solid var(--bs-light);
+    border: var(--bs-border-width) solid var(--bs-dark);
 }
 
 iconify-icon.hamburger-menu {
-    color: var(--bs-light);
+    color: var(--bs-dark);
     font-size: 30px;
 }
 
@@ -322,6 +337,67 @@ iconify-icon.hamburger-menu {
     }
 }
 
+
+/* TikTok */
+#tiktok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0 12px;
+
+    .tiktok-video-wrapper {
+        position: relative;
+        padding: 10px;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+
+        .video {
+            width: 100%;
+            max-height: 650px;
+            height: 100%;
+            display: block;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 12px;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .tiktok-logo {
+        height: 30px;
+        width: auto;
+    }
+
+    .video-container:hover .video {
+        transform: scale(1.05);
+    }
+
+}
+
+
 /* info */
 .maps {
     display: flex;
@@ -356,8 +432,14 @@ iconify-icon.hamburger-menu {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #home {
+        .background-video {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+
     .navbar {
-        background-color: #000;
         border-radius: 0 0 12px 12px;
 
         a {
@@ -376,6 +458,14 @@ iconify-icon.hamburger-menu {
             flex-direction: row;
             justify-content: flex-start;
         }
+
+        .hamburger-menu {
+            color: gray;
+        }
+        .navbar-toggler{
+            border: var(--bs-border-width) solid var(--bs-gray);
+        }
+
     }
 
     .row {
@@ -404,12 +494,13 @@ iconify-icon.hamburger-menu {
             font-size: 17px !important;
         }
 
-        a.nav-link{
+        a.nav-link {
             font-size: 14px !important;
         }
 
-        .footer-containerG{
+        .footer-containerG {
             max-width: 850px;
+
             .custom-footer {
                 display: flex;
                 justify-content: space-around;
@@ -417,6 +508,7 @@ iconify-icon.hamburger-menu {
             }
 
         }
+
         .col-md-3.my-0.my-lg-0.my-md-0.mt-md-0 {
             display: flex;
             width: 100%;
@@ -426,11 +518,40 @@ iconify-icon.hamburger-menu {
             width: 110px;
         }
     }
+    #tiktok{
+        .video-container{
+            .video{
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    #tiktok{
+        .video-container{
+            .video{
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .col-12{
+            padding: 8px 0;
+        }
+    }
+
     #home {
-        background-position: left;
+        height: 60vh;
+        background-image: url(images/mr-wash.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .background-video {
+            height: 100%;
+            display: none;
+        }
     }
 
     .tab-content {
@@ -447,7 +568,6 @@ iconify-icon.hamburger-menu {
     }
 
     .navbar {
-        background-color: #000;
         border-radius: 0 0 12px 12px;
 
         a {
@@ -465,6 +585,10 @@ iconify-icon.hamburger-menu {
             align-items: flex-start;
             flex-direction: row;
             justify-content: flex-start;
+        }
+
+        .hamburger-menu {
+            color: black;
         }
     }
 
@@ -512,6 +636,7 @@ iconify-icon.hamburger-menu {
     /*    height: 450px;*/
     /*}*/
     .footer-containerG {
+
         .contact {
             align-items: flex-start;
         }
@@ -686,6 +811,14 @@ iconify-icon.video-icon {
 /*---- footer section style start ----*/
 section#footer {
     background: var(--background-color);
+
+    .footer-containerG {
+        .custom-footer {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
 }
 
 .navbar-nav .footer-list .nav-link:hover,

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Mr Wash Clean Park is your go-to destination for professional car wash and detailing services. Experience premium auto care with eco-friendly solutions, fast service, and unmatched quality.">
+    <meta name="description"
+          content="Mr Wash Clean Park is your go-to destination for professional car wash and detailing services. Experience premium auto care with eco-friendly solutions, fast service, and unmatched quality.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr Wash Clean Park</title>
     <link rel="icon" href="images/logo1.webp" type="image/x-icon">
@@ -14,11 +15,11 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
-    <!--Bootstrap ================================================== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!-- BootStrap-->
+    <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
+
+    <!--Tik Tok-->
+    <script async src="packages/tiktok.js"></script>
 
     <!-- Style Sheet ================================================== -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -43,79 +44,100 @@
         <a class="navbar-brand" href="#" style="color: white">
             <img src="images/logo1.webp" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Offcanvas toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.home"
-                       href="#home"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.about_us"
-                       href="#about"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.gallery"
-                       href="#project"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.pricing"
-                       href="#price"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="footer.contact_us"
-                       href="#info-us"></a>
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.sponsors"-->
-<!--                       href="#sponsors"></a>-->
-<!--                </li>-->
-            </ul>
-            <ul class="navbar-nav social-media me-lg-3 d-flex align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link px-2" target="_blank"
-                       href="https://www.facebook.com/profile.php?id=61562512852389">
-                        <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2" target="_blank"
-                       href="https://www.instagram.com/mrwashcleanpark?igsh=YTJzOXgwMzJxNHdw&utm_source=qr">
-                        <iconify-icon icon="ri:instagram-line" class="social-icon text-white"></iconify-icon>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2" target="_blank"
-                       href="https://www.tiktok.com/@mrwashcleanpark?_t=ZM-8tyT7eWCPRu&_r=1">
-                        <iconify-icon icon="ri:tiktok-line" class="social-icon text-white"></iconify-icon>
-                    </a>
-                </li>
-            </ul>
-            <div class="language-switcher" role="radiogroup" aria-labelledby="language-switcher-label">
-                <p class="hidden" id="language-switcher-label">Choose a language</p>
 
-                <input class="language__control" type="radio" id="language-en" name="language-switch"
-                       data-language="english" checked>
-                <label class="language__option" for="language-en">
-                    <img src="images/english.png" alt="English flag">
-                    <span>EN</span>
-                </label>
+        <!-- Offcanvas content -->
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+             aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="./images/logo1.webp" alt="logo" width="100">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
 
-                <input class="language__control" type="radio" id="language-al" name="language-switch"
-                       data-language="albanian">
-                <label class="language__option" for="language-al">
-                    <img src="images/albanian.png" alt="Albanian flag">
-                    <span>AL</span>
-                </label>
+            <div class="offcanvas-body">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.home"
+                           href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.about_us"
+                           href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.gallery"
+                           href="#project">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="navigation.pricing"
+                           href="#price">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase mx-2 px-lg-3 px-0" data-key="footer.contact_us"
+                           href="#info-us">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Social Media -->
+                <ul class="navbar-nav d-flex flex-row mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link px-2" target="_blank"
+                           href="https://www.facebook.com/profile.php?id=61562512852389">
+                            <iconify-icon icon="ri:facebook-fill" class="social-icon text-white"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" target="_blank"
+                           href="https://www.instagram.com/mrwashcleanpark?igsh=YTJzOXgwMzJxNHdw&utm_source=qr">
+                            <iconify-icon icon="ri:instagram-line" class="social-icon text-white"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" target="_blank"
+                           href="https://www.tiktok.com/@mrwashcleanpark?_t=ZM-8tyT7eWCPRu&_r=1">
+                            <iconify-icon icon="ri:tiktok-line" class="social-icon text-white"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Language Switcher -->
+                <div class="language-switcher mt-lg-0 mt-3" role="radiogroup" aria-labelledby="language-switcher-label">
+                    <p class="hidden" id="language-switcher-label">Choose a language</p>
+
+                    <input class="language__control" type="radio" id="language-en" name="language-switch"
+                           data-language="english" checked>
+                    <label class="language__option" for="language-en">
+                        <img src="images/english.png" alt="English flag">
+                        <span>EN</span>
+                    </label>
+
+                    <input class="language__control" type="radio" id="language-al" name="language-switch"
+                           data-language="albanian">
+                    <label class="language__option" for="language-al">
+                        <img src="images/albanian.png" alt="Albanian flag">
+                        <span>AL</span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
 </nav>
 
 <section id="home">
+
+    <video id="bgVideo" autoplay muted loop class="background-video">
+        <source src="images/new-video.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
     <div class="container padding-large">
         <div class="row">
             <div class="col-md-6 offset-md-3 text-center">
@@ -424,11 +446,18 @@
                                 <h2 class="display-5 mb-5">0.50€</h2>
                                 <div class="price-option">
                                     <p><span class="price-tick">-</span><span class="price-text">100 Sec</span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.shampo"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.foam"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.pressure_wash"></span>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.basic.shampo"></span>
                                     </p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.basic.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.basic.foam"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.basic.pressure_wash"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.basic.wax"></span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -438,11 +467,18 @@
                                 <h2 class="display-5 mb-5">1.00€</h2>
                                 <div class="price-option">
                                     <p><span class="price-tick">-</span><span class="price-text">200 Sec</span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.shampo"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.foam"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.pressure_wash"></span>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.deluxe.shampo"></span>
                                     </p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.deluxe.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.deluxe.foam"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.deluxe.pressure_wash"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.deluxe.wax"></span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -452,11 +488,18 @@
                                 <h2 class="display-5 mb-5">2.00€</h2>
                                 <div class="price-option">
                                     <p><span class="price-tick">-</span><span class="price-text">400 Sec</span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.shampo"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.foam"></span></p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.pressure_wash"></span>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.ultimate.shampo"></span>
                                     </p>
-                                    <p><span class="price-tick">-</span><span class="price-text" data-key="pricing_plans.ultimate.wax"></span></p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.ultimate.foam"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.ultimate.pressure_wash"></span>
+                                    </p>
+                                    <p><span class="price-tick">-</span><span class="price-text"
+                                                                              data-key="pricing_plans.ultimate.wax"></span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -477,19 +520,58 @@
     </div>
 </section>
 
-<section class="video">
-    <div style="overflow: hidden;">
-        <div class="video-content position-relative open-up" data-aos="zoom-out">
-            <div class="video-wrapper position-relative">
-                <video controls id="video"  poster="images/night-image-7.webp">
-                    <source src="images/new-video2.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <iconify-icon icon="ion:play-sharp" class="video-icon"></iconify-icon>
+<script>
+</script>
+
+<section id="tiktok">
+    <div class="container p-0" data-aos="zoom-out">
+        <h2 class="display-4 mb-5 ">TikTok</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 tiktok-video-wrapper">
+                <a href="https://www.tiktok.com/@mrwashcleanpark/video/7484314016064474373" target="_blank">
+                    <div class="video-container">
+                        <video autoplay muted loop class="video">
+                            <source src="images/tiktok1.mp4" type="video/mp4">
+                        </video>
+                        <div class="overlay">
+                            <img src="images/logo1.webp" alt="TikTok" class="tiktok-logo" />
+                            <span>Watch on TikTok</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 tiktok-video-wrapper">
+                <a href="https://www.tiktok.com/@mrwashcleanpark/video/7492767738247564549" target="_blank">
+                    <div class="video-container">
+                        <video autoplay muted loop class="video">
+                            <source src="images/tiktok2.mp4" type="video/mp4">
+                        </video>
+                        <div class="overlay">
+                            <img src="images/logo1.webp" alt="TikTok" class="tiktok-logo" />
+                            <span>Watch on TikTok</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 tiktok-video-wrapper">
+                <a href="https://www.tiktok.com/@mrwashcleanpark/video/7499480738987222278" target="_blank">
+                    <div class="video-container">
+                        <video autoplay muted loop class="video">
+                            <source src="images/tiktok3.mp4" type="video/mp4">
+                        </video>
+                        <div class="overlay">
+                            <img src="images/logo1.webp" alt="TikTok" class="tiktok-logo" />
+                            <span>Watch on TikTok</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </section>
+
 
 <!--<section id="sponsors">-->
 <!--    <div style="overflow: hidden" class="sponsors">-->
@@ -616,7 +698,8 @@
 
                     <div class="social-icons">
                         <p>@TikTok</p>
-                        <a target="_blank" href="https://www.tiktok.com/@mrwashcleanpark?_t=ZM-8tyT7eWCPRu&_r=1">Follow</a>
+                        <a target="_blank"
+                           href="https://www.tiktok.com/@mrwashcleanpark?_t=ZM-8tyT7eWCPRu&_r=1">Follow</a>
                         <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path>
                         </svg>

@@ -2,6 +2,14 @@ import translations from './translation.js';
 
 (function ($) {
 
+  window.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('bgVideo');
+    if (window.innerWidth <= 768) {
+      video.pause();
+      video.style.display = 'none';
+    }
+  });
+
   "use strict";
 
   function applyTranslations(language) {
@@ -266,17 +274,28 @@ import translations from './translation.js';
     });
   });
 
+
   // background color when scroll
 
-  var initScrollNav = function() {
+  var initScrollNav = function () {
     var scroll = $(window).scrollTop();
+    var isDesktop = window.innerWidth >= 1023;
 
-    if (scroll >= 200) {
-      $('.navbar.fixed-top').addClass("bg-black");
-    }else{
+    if (isDesktop) {
+      if (scroll >= 200) {
+        $('.navbar.fixed-top').addClass("bg-black");
+      } else {
+        $('.navbar.fixed-top').removeClass("bg-black");
+      }
+    } else {
       $('.navbar.fixed-top').removeClass("bg-black");
     }
-  }
+  };
+
+  $(window).on('scroll resize', initScrollNav);
+
+// Optionally call once on page load
+  $(document).ready(initScrollNav);
 
   $(window).scroll(function() {
     initScrollNav();
