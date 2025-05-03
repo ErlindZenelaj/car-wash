@@ -3,12 +3,16 @@ import translations from './translation.js';
 (function ($) {
 
   window.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('bgVideo');
     if (window.innerWidth <= 768) {
-      video.pause();
-      video.style.display = 'none';
+      const videos = document.querySelectorAll('video');
+      videos.forEach(video => {
+        video.pause();
+        video.removeAttribute('autoplay');
+        video.removeAttribute('muted');
+      });
     }
   });
+
 
   "use strict";
 

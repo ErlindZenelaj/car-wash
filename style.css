@@ -467,7 +467,10 @@ iconify-icon.hamburger-menu {
             color: gray;
         }
         .navbar-toggler{
-            border: var(--bs-border-width) solid var(--bs-gray);
+            border: var(--bs-border-width) solid #d3d3d3;
+        }
+        .navbar-toggler:focus{
+            box-shadow: none;
         }
 
     }
@@ -597,7 +600,13 @@ iconify-icon.hamburger-menu {
         }
 
         .hamburger-menu {
-            color: black;
+            color: gray;
+        }
+        .navbar-toggler{
+            border: var(--bs-border-width) solid #d3d3d3;
+        }
+        .navbar-toggler:focus{
+            box-shadow: none;
         }
     }
 

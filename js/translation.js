@@ -122,9 +122,15 @@ const translations = {
             "our_services": "Our Services",
             "all_rights": "© 2025 Mr Wash, Carwash | All Rights Reserved",
             "description": "Experience top-notch self-service car washing with our state-of-the-art facilities, ensuring your vehicle stays pristine.",
+        },
+        "tiktok":{
+            'watch': "Watch on TikTok"
         }
     },
     "albanian": {
+        "tiktok":{
+            'watch': "Shiko në TikTok"
+        },
         "title": "Lavazhi më i mirë në qytet",
         "description": "Mr Wash Car Wash",
         "navigation": {
