@@ -244,11 +244,11 @@ iconify-icon.hamburger-menu {
     }
 
 
-    .navbar-nav .nav-link.active,
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.show {
-        background: rgba(255, 255, 255, 0.35);
-    }
+    /*.navbar-nav .nav-link.active,*/
+    /*.navbar-nav .nav-link:hover,*/
+    /*.navbar-nav .nav-link.show {*/
+    /*    background: rgba(255, 255, 255, 0.35) !important;*/
+    /*}*/
 
     iconify-icon.social-icon {
         font-size: 1.2rem;
@@ -344,8 +344,10 @@ iconify-icon.hamburger-menu {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
     padding: 0 12px;
+    max-width: 1120px;
+    margin: 0 auto 120px auto;
+
 
    .tiktoks{
        display: flex;
@@ -679,7 +681,6 @@ iconify-icon.icon-arrow-left,
 iconify-icon.icon-arrow-right {
     font-size: 50px;
 }
-
 
 /* tab style  */
 .nav-tabs {
